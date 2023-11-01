@@ -1,14 +1,14 @@
-package br.com.project.springmicroserviceproject.controller;
+package br.com.project.springmicroserviceproject.restcontroller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@Controller
-public class HelloController {
-	@RequestMapping("/hello")
-	public String Hello() {
-		return "hello";
+@RestController
+public class PureTextController {
+	
+	@RequestMapping("/") 
+	public String index() { 
+		return "Greetings from Spring Boot - Mr Title !"; 
 	}
 
 }
