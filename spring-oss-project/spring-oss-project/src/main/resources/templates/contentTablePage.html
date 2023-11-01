@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>See your content</title>
+	</head>
+	<body>
+		<table border='1'>
+			<tr><th>TICKER</th><th>Price</th></tr>
+			<tr><th>example 1</th><th>299,00</th></tr>
+			<tr><th>example 2</th><th>500,00</th></tr>
+			<tr><th>example 3</th><th>300,00</th></tr>
+			<tr><th>example 4</th><th>16000,00</th></tr>
+		</table>
+		<form name="trade" action="http://localhost:7070/trade/do" method="post">
+			<h1>Stock Trading</h1>
+			<table border='1'>
+				<tr><td>Ticker:</td><td><input type="text" name="ticker" id="ticker"/></td></tr>
+				<tr><td>Quantity:</td><td><input type="number" name="quantity" id="quantity" min="10" max="100" step="10"/></td></tr>
+				<tr><td><input type="submit" name="submit" value="submit"/></td></tr>
+			</table>
+		</form>
+	</body>	
+</html>
